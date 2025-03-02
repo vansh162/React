@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+  }
+  .navbar {
+    width: 1485px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    transition: 0.5s;
+  }
+  .logo {
+    width: 160px;
+    margin-left: 20px;
+  }
+  ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    margin-right: -700px;
+  }
+  ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .modeImg img {
+    width: 50px;
+    cursor: pointer;
+    margin-left: -200px;
+  }
+  .func {
+    width: 500px;
+    margin-left: -800px;
+  }
+  
