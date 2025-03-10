@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 const Section = () => {
   const [textInput, setTextInput] = useState("");
   const [todolist, setTodolist] = useState(
-    JSON.parse(localStorage.getItem("todolist")),
-    []
+    JSON.parse(localStorage.getItem("todolist")) || []
   );
   const [bool, setBool] = useState(false);
   const [editIndex, setEditIndex] = useState("");
@@ -46,7 +45,6 @@ const Section = () => {
 
   return (
     <>
-
       <div className="m-8">
         <form className="max-w-md mx-auto">
           <div className="relative flex">
