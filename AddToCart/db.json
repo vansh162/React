@@ -1,0 +1,164 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "TSS Originals: Samsara",
+      "price": 1699,
+      "description": "This tee isn't just big, it's a statement piece. Made from a super-soft, breathable fabric that feels like your favorite old band tee (but way less worn-out), this shirt is perfect for just chilling.",
+      "category": "Men's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741869882_7521759.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 2,
+      "title": "Urban Blaze: Mocha",
+      "price": 2599,
+      "description": "Step into style and comfort with our Women's Low Top Shoes, the perfect blend of casual cool and everyday wear. Crafted with premium materials and a sleek design, these shoes are ready to take you from morning meetings to evening outings with ease.",
+      "category": "Sneakers",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1712301852_1961860.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 3,
+      "title": "Deadpool: Great Irresponsibility",
+      "price": 1200,
+      "description": "Deadpool (Wade Winston Wilson) is a fictional antihero who appears in Marvel Comics' American comic novels. The character was first introduced in The New Mutants #98 by artist/writer Rob Liefeld and writer Fabian Nicieza (cover-dated February 1991). When Deadpool first appeared in The New Mutants and later in issues of X-Force, he was depicted as a supervillain, but he later evolved into his more known antiheroic figure..",
+      "category": "Men's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1716375827_3488629.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 4,
+      "title": "Spider-Man: Midnight",
+      "price": 1549,
+      "description": "Official Licensed Spider-Man Oversized T-Shirt. Shop for Spider Man: Midnight Oversized T-Shirts at The Souled Store.",
+      "category": "Men's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1739863115_4407127.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 5,
+      "title": "Souled Originals: Varsity",
+      "price": 999,
+      "description": "It's easy, breezy, & carefree! Made for the days when you want to conquer the world with freedom, these oversized beauties have got your back (literally, they've got a lot of extra fabric). So go ahead, strut your stuff like the fierce queen you are in our Women's Oversized Tees.",
+      "category": "Women's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743490170_5389356.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 6,
+      "title": "Urban Blaze: Latte",
+      "price": 2799,
+      "description": "Shop for Urban Blaze: Latte Men Low Top Sneakers at The Souled Store.",
+      "category": "Sneakers",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1720112355_6238943.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 7,
+      "title": "Souled Originals: Sketchy",
+      "price": 1199,
+      "description": "This tee isn't just big, it's a statement piece. Made from a super-soft, breathable fabric that feels like your favorite old band tee (but way less worn-out), this shirt is perfect for just chilling.",
+      "category": "Women's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743583881_4495154.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 8,
+      "title": "Textured Tshirt: Garfield",
+      "price": 1049,
+      "description": "Mondays are ruff, but can be made better with this tee! Designed for those who appreciate lounging around in style, these tees are a wardrobe essential. Perfect for any occasion, from casual outings to chilling at home, these tees are your new go-to's.",
+      "category": "Women's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740999893_9365941.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 9,
+      "title": "Batman: Wayne Industries",
+      "price": 1499,
+      "description": "Feeling bored by your regular shirts? Escape the ordinary with these oversized shirts! These shirts are like comfy pajamas that somehow scored a promotion to the looking awesome department.",
+      "category": "Men's Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743513637_9880778.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 10,
+      "title": "TSS Originals: Let's Sail",
+      "price": 1299,
+      "description": "Time for some eclectic style! Are you ready to make a bold statement with these tees? Let's go! These oversized t-shirts make you feel comfy while you stand out in the crowd. The loose, relaxed fit is perfect for those who love a laid-back vibe without compromising on style.",
+      "category": "Men's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1729952911_4113341.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 11,
+      "title": "Rick And Morty: Portal To Happiness",
+      "price": 849,
+      "description": "Shop for Rick And Morty: Portal To Happiness Oversized T-Shirts at The Souled Store.",
+      "category": "Men's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1711453537_9395201.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 12,
+      "title": "Jacquard Polo: Monochrome",
+      "price": 1399,
+      "description": "This polo's got your back (and style game) covered. Crafted from breathable fabric that's soft as a summer breeze, it keeps you comfy all day long. Time to look and feel awesome!",
+      "category": "Men's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741877163_5023102.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 13,
+      "title": "Garfield: Attitude",
+      "price": 849,
+      "description": "Ever have those days when your to-do list is as long as Mondays, and you're like, Nah, let's make it a binge-watching marathon instead? Garfield gets you. This tee is a vibe â?? a I'm too fabulous to adult today kind of vibe.",
+      "category": "Women's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714974511_3405123.png?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 14,
+      "title": "Urban Blaze: Fury",
+      "price": 2899,
+      "description": "Shop for Urban Blaze: Fury Men Low Top Sneakers at The Souled Store.",
+      "category": "Sneakers",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1737614377_4461322.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 15,
+      "title": "Mean Girls: A Little Dramatic",
+      "price": 699,
+      "description": "Shop for Mean Girls: A Little Dramatic Women Cropped Tops at The Souled Store.",
+      "category": "Women's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1713545031_6899349.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 16,
+      "title": "Pink Panther: Pink Trouble",
+      "price": 799,
+      "description": "Shop for Pink Panther: Pink Trouble Women Oversized T-Shirt at the Souled Store.",
+      "category": "Women's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1742814761_6527894.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 17,
+      "title": "The Aristocats: It's All About Me-Now",
+      "price": 849,
+      "description": "Shop for The Aristocats: It's All About Me-Now Women Oversized T-shirt at the Souled Store.",
+      "category": "Women's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1710484683_3073039.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 18,
+      "title": "TSS Originals: Meadows",
+      "price": 2499,
+      "description": "Step into style and comfort with our Men's Low Top Shoes, the perfect blend of casual cool and everyday wear. Crafted with premium materials and a sleek design, these shoes are ready to take you from morning meetings to evening outings with ease.",
+      "category": "Sneakers",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1712639190_5449743.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 19,
+      "title": "Scooby Doo: Mystery Machine",
+      "price": 2499,
+      "description": "Step into style and comfort with these Low Top Shoes, the perfect blend of casual cool and everyday wear. Crafted with premium materials and a sleek design, these shoes are ready to take you from morning meetings to evening outings with ease.",
+      "category": "Sneakers",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1724343432_5523908.jpg?format=webp&w=480&dpr=1.3"
+    },
+    {
+      "id": 20,
+      "title": "Jacquard: Old School Brown",
+      "price": 1399,
+      "description": "This polo's got your back (and style game) covered. Crafted from breathable fabric that's soft as a summer breeze, it keeps you comfy all day long. Time to look and feel awesome!",
+      "category": "Men's T-Shirt",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1742825568_6284539.jpg?format=webp&w=480&dpr=1.3"
+    }
+  ]
+}
