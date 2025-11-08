@@ -33,19 +33,19 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto px-4 mb-8">
+    <div className="w-full max-w-2xl mx-auto px-4 mb-6 md:mb-8">
       <form onSubmit={handleSubmit} className="relative">
         <div className="relative">
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search for movies by title, genre, or cast..."
-            className="w-full px-4 py-3 pl-12 text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            placeholder="Search movies..."
+            className="w-full px-4 py-3 md:py-3 pl-10 md:pl-12 pr-20 md:pr-24 text-sm md:text-base text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
           />
-          <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+          <div className="absolute inset-y-0 left-0 pl-3 md:pl-4 flex items-center pointer-events-none">
             <svg
-              className="h-5 w-5 text-gray-400"
+              className="h-4 w-4 md:h-5 md:w-5 text-gray-400"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -59,9 +59,10 @@ const SearchBar = () => {
           </div>
           <button
             type="submit"
-            className="absolute inset-y-0 right-0 px-4 text-sm font-medium text-white bg-blue-600 rounded-r-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200"
+            className="absolute inset-y-0 right-0 px-3 md:px-4 text-xs md:text-sm font-medium text-white bg-blue-600 rounded-r-lg hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200 touch-manipulation"
           >
-            Search
+            <span className="hidden sm:inline">Search</span>
+            <span className="sm:hidden">🔍</span>
           </button>
         </div>
       </form>

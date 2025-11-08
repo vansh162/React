@@ -1,0 +1,183 @@
+export const moviesData = [
+  {
+    "title": "Crew",
+    "release_date": "2025-04-26",
+    "status": "Now Playing",
+    "genre": ["Comedy", "Drama"],
+    "cast": ["Kareena Kapoor", "Tabu", "Kriti Sanon"],
+    "description": "A comedy-drama featuring three flight attendants entangled in unexpected chaos.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGRmYjBmOWQtMmY1NS00Njk3LWFkYWYtZWY3ODQ0N2U2NTBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "title": "The Goat Life",
+    "release_date": "2025-03-28",
+    "status": "Now Playing",
+    "genre": ["Drama", "Survival"],
+    "cast": ["Prithviraj Sukumaran", "Amala Paul"],
+    "description": "A gripping survival story of an Indian migrant worker trapped in the deserts of Saudi Arabia.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6533zdmMRvC370iyKV7Nz7uvzs9i2yQ-jg&s"
+  },
+  {
+    "title": "Laapataa Ladies",
+    "release_date": "2025-04-01",
+    "status": "Now Playing",
+    "genre": ["Comedy", "Drama"],
+    "cast": ["Nitanshi Goel", "Sparsh Shrivastav", "Pratibha Ranta"],
+    "description": "A tale of two brides who get lost during a train journey, leading to unexpected adventures.",
+    "poster": "https://upload.wikimedia.org/wikipedia/en/5/52/Laapataa_Ladies_poster.jpg"
+  },
+  {
+    "title": "Article 370",
+    "release_date": "2025-02-23",
+    "status": "Now Playing",
+    "genre": ["Political", "Drama", "Thriller"],
+    "cast": ["Yami Gautam", "Priyamani"],
+    "description": "A political drama depicting the events leading to the abrogation of Article 370 in Jammu & Kashmir.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjZhMzNkMzctNmQwOS00MmM0LWE2NGEtMmZhODZhZTI5ZTE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "title": "Aadujeevitham",
+    "release_date": "2025-04-10",
+    "status": "Now Playing",
+    "genre": ["Drama", "Survival"],
+    "cast": ["Prithviraj Sukumaran", "Amala Paul"],
+    "description": "Based on Benyamin's novel, it narrates a man's fight for survival in the Saudi deserts.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1Tm9hT5XUFK13EnjXdZ4y_1fOiyLgqZ2TA&s"
+  },
+  {
+    "title": "Manjummel Boys",
+    "release_date": "2025-03-10",
+    "status": "Now Playing",
+    "genre": ["Thriller", "Adventure"],
+    "cast": ["Soubin Shahir", "Sreenath Bhasi"],
+    "description": "A thrilling survival story based on a real cave rescue mission.",
+    "poster": "https://image.tmdb.org/t/p/original/bswrtewwthpsh6nABiqKevU4UBI.jpg"
+  },
+  {
+    "title": "12th Fail",
+    "release_date": "2024-10-27",
+    "status": "Now Playing",
+    "genre": ["Biopic", "Drama"],
+    "cast": ["Vikrant Massey", "Medha Shankar"],
+    "description": "Inspired by a true story, it follows a man's journey from academic failure to success.",
+    "poster": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/45f696188399321.659bddd7496e9.jpg"
+  },
+  {
+    "title": "Tillu Square",
+    "release_date": "2025-03-29",
+    "status": "Now Playing",
+    "genre": ["Comedy", "Crime"],
+    "cast": ["Siddhu Jonnalagadda", "Anupama Parameswaran"],
+    "description": "A sequel to the hit comedy, showcasing Tillu's new misadventures.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzc5MmZjYmItOTczNS00ODcwLWI5NmMtNmNkNGQxODlhZTJkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "title": "Fighter",
+    "release_date": "2025-01-25",
+    "status": "Now Playing",
+    "genre": ["Action", "Thriller"],
+    "cast": ["Hrithik Roshan", "Deepika Padukone", "Anil Kapoor"],
+    "description": "An action-packed film highlighting the bravery of Indian Air Force pilots.",
+    "poster": "https://feeds.abplive.com/onecms/images/uploaded-images/2023/12/25/a437f1390daf29e5459d97494dede8e61703482019385274_original.jpg"
+  },
+  {
+    "title": "Shaitaan",
+    "release_date": "2025-03-08",
+    "status": "Now Playing",
+    "genre": ["Horror", "Thriller"],
+    "cast": ["Ajay Devgn", "R. Madhavan", "Janki Bodiwala"],
+    "description": "A horror-thriller where a family's vacation turns into a nightmare after a mysterious visitor arrives.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODM3M2Q0ZjctMDE2MS00ZTFkLTkyYjgtMDMxOTJhZGNmNmM0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "title": "Lahore 1947",
+    "release_date": "2025-01-26",
+    "status": "Upcoming",
+    "genre": ["Historical", "Drama"],
+    "cast": ["Aamir Khan", "Vicky Kaushal"],
+    "description": "A gripping tale set during India's Partition, showcasing human emotions and resilience.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzY1NDIyYjAtYmNmOC00NzU2LWE5NTEtZjUyOTI3ZGE5OWNjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "title": "Chhorii 2",
+    "release_date": "2025-04-11",
+    "status": "Upcoming",
+    "genre": ["Horror", "Thriller"],
+    "cast": ["Nushrratt Bharuccha", "Soha Ali Khan"],
+    "description": "A sequel to the horror film 'Chhorii', continuing the spine-chilling saga.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTFhOTE4MWItZTdmZS00NTI0LTliM2ItNTM4ZjM5MjE0MTYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "title": "Kesari Chapter 2",
+    "release_date": "2025-05-16",
+    "status": "Upcoming",
+    "genre": ["Action", "War"],
+    "cast": ["Akshay Kumar", "Ananya Panday"],
+    "description": "The epic continues as brave warriors face new challenges on the battlefield.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1HNgX0OWQhUCNYDv8-Dc0gd9c1wkF_p6LnQ&s"
+  },
+  {
+    "title": "Romeo S3",
+    "release_date": "2025-05-16",
+    "status": "Upcoming",
+    "genre": ["Suspense", "Thriller", "Action"],
+    "cast": ["Unknown"],
+    "description": "An action-packed thriller with unexpected twists and turns.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWRSfdGwTxOqEqkqbIoQHtf54rudrO03Rbg&s"
+  },
+  {
+    "title": "Kapkapiii",
+    "release_date": "2025-05-23",
+    "status": "Upcoming",
+    "genre": ["Comedy", "Horror"],
+    "cast": ["Shreyas Talpade", "Tusshar Kapoor", "Sonia Rathee", "Siddhi Idnani"],
+    "description": "A horror-comedy that promises laughs and scares in equal measure.",
+    "poster": "https://static.toiimg.com/photo/108703057.cms"
+  },
+  {
+    "title": "Alpha",
+    "release_date": "2025-12-25",
+    "status": "Upcoming",
+    "genre": ["Action", "Spy", "Thriller"],
+    "cast": ["Alia Bhatt", "Sharvari Wagh", "Vicky Kaushal", "Bobby Deol", "Anil Kapoor"],
+    "description": "The first female-led installment in the YRF Spy Universe, featuring elite intelligence agents on a high-stakes mission.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROn6hLZ4FN2cDXUwesNDclx0DavgkX1kQuDg&s"
+  },
+  {
+    "title": "120 Bahadur",
+    "release_date": "2025-11-21",
+    "status": "Upcoming",
+    "genre": ["War", "Drama"],
+    "cast": ["Farhan Akhtar"],
+    "description": "An intense military action film set during the 1962 India-China war, paying tribute to Major Shaitan Singh and the brave soldiers of Charlie Company.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWE4NzA3NGItYWM1NS00OTQ1LTliNTItMmUzMDlmOGY2Mzc2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "title": "Ground Zero",
+    "release_date": "2025-04-25",
+    "status": "Upcoming",
+    "genre": ["Action", "Drama"],
+    "cast": ["Emraan Hashmi", "Sai Tamhankar"],
+    "description": "A high-octane action drama set against the backdrop of national security threats.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO6JUnez0Dg3ZVcLAbGLODOLGJLDrQZGmEhQ&s"
+  },
+  {
+    "title": "Phule",
+    "release_date": "2025-04-25",
+    "status": "Upcoming",
+    "genre": ["Biopic", "Drama"],
+    "cast": ["Pratik Gandhi", "Patralekha"],
+    "description": "A biographical drama depicting the life and contributions of social reformer Jyotirao Phule.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzU1Mzk4OTAtYzZhMS00NjQwLTkzYmQtNTFmNGUxYjFjMWQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "title": "Jewel Thief",
+    "release_date": "2025-04-25",
+    "status": "Upcoming",
+    "genre": ["Thriller", "Crime"],
+    "cast": ["Saif Ali Khan", "Jaideep Ahlawat"],
+    "description": "A thrilling tale of a master thief and the detective determined to catch him.",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7m8_EL5VqwF8dkpCBsT10SdJnIjLlXaWm5g&s"
+  }
+];
+

@@ -39,15 +39,15 @@ const MovieList = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 py-8">
+      <div className="min-h-screen bg-gray-50 py-4 md:py-8">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-6">
             {[...Array(10)].map((_, index) => (
               <div key={index} className="animate-pulse">
-                <div className="bg-gray-200 rounded-xl aspect-[2/3] mb-4" />
-                <div className="space-y-3">
-                  <div className="h-4 bg-gray-200 rounded w-3/4" />
-                  <div className="h-3 bg-gray-200 rounded w-1/2" />
+                <div className="bg-gray-200 rounded-lg md:rounded-xl aspect-[2/3] mb-3 md:mb-4" />
+                <div className="space-y-2 md:space-y-3">
+                  <div className="h-3 md:h-4 bg-gray-200 rounded w-3/4" />
+                  <div className="h-2 md:h-3 bg-gray-200 rounded w-1/2" />
                 </div>
               </div>
             ))}
@@ -59,29 +59,29 @@ const MovieList = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
         <div className="text-center">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-2">Error Loading Movies</h2>
-          <p className="text-gray-600">{error}</p>
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Error Loading Movies</h2>
+          <p className="text-sm md:text-base text-gray-600">{error}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gray-50 py-4 md:py-8">
       <div className="container mx-auto px-4">
         {location.pathname === '/popular' && (
-          <h1 className="text-3xl font-bold text-gray-900 mb-8">Popular Movies</h1>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-8">Popular Movies</h1>
         )}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-6">
           {filteredMovies.map((movie) => (
             <MovieCard key={movie.title} movie={movie} />
           ))}
         </div>
         {filteredMovies.length === 0 && (
-          <div className="text-center py-12">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+          <div className="text-center py-8 md:py-12">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
               {location.pathname === '/search'
                 ? 'No Movies Found'
                 : location.pathname === '/favorites'
@@ -90,7 +90,7 @@ const MovieList = () => {
                 ? 'No Movies in Watchlist'
                 : 'No Movies Found'}
             </h2>
-            <p className="text-gray-600">
+            <p className="text-sm md:text-base text-gray-600 px-4">
               {location.pathname === '/search'
                 ? 'Try adjusting your search criteria'
                 : location.pathname === '/favorites'

@@ -1,16 +1,18 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { moviesData } from '../../data/moviesData';
 
-const API_URL = 'http://localhost:3004/movies';
+// Simulate API delay for better UX (optional - remove if you want instant loading)
+const simulateDelay = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const fetchMovies = createAsyncThunk(
   'movies/fetchMovies',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get(API_URL);
-      return response.data;
+      // Simulate network delay
+      await simulateDelay(200);
+      return moviesData;
     } catch (error) {
-      return rejectWithValue(error.response.data);
+      return rejectWithValue(error.message || 'Failed to fetch movies');
     }
   }
 );
@@ -19,13 +21,14 @@ export const fetchPopularMovies = createAsyncThunk(
   'movies/fetchPopularMovies',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get(API_URL);
-      const sortedMovies = response.data
+      // Simulate network delay
+      await simulateDelay(200);
+      const sortedMovies = [...moviesData]
         .sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
         .slice(0, 6);
       return sortedMovies;
     } catch (error) {
-      return rejectWithValue(error.response.data);
+      return rejectWithValue(error.message || 'Failed to fetch popular movies');
     }
   }
 );
@@ -34,16 +37,16 @@ export const searchMovies = createAsyncThunk(
   'movies/searchMovies',
   async (searchTerm, { rejectWithValue }) => {
     try {
-      const response = await axios.get(API_URL);
-      const movies = response.data;
-      const filteredMovies = movies.filter(movie => 
+      // Simulate network delay for search
+      await simulateDelay(150);
+      const filteredMovies = moviesData.filter(movie => 
         movie.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         movie.genre.some(g => g.toLowerCase().includes(searchTerm.toLowerCase())) ||
         movie.cast.some(c => c.toLowerCase().includes(searchTerm.toLowerCase()))
       );
       return filteredMovies;
     } catch (error) {
-      return rejectWithValue(error.response.data);
+      return rejectWithValue(error.message || 'Failed to search movies');
     }
   }
 );

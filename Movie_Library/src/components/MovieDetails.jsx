@@ -32,11 +32,11 @@ const MovieDetails = () => {
   const isInWatchlist = watchlist.includes(movie.title);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gray-50 py-4 md:py-8">
       <div className="container mx-auto px-4">
         <button
           onClick={() => navigate('/')}
-          className="mb-8 flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-200"
+          className="mb-4 md:mb-8 flex items-center text-gray-600 hover:text-gray-900 active:text-gray-900 transition-colors duration-200 touch-manipulation"
         >
           <svg
             className="w-5 h-5 mr-2"
@@ -51,35 +51,35 @@ const MovieDetails = () => {
               d="M10 19l-7-7m0 0l7-7m-7 7h18"
             />
           </svg>
-          Back to Movies
+          <span className="text-sm md:text-base">Back to Movies</span>
         </button>
 
-        <div className="bg-white rounded-xl shadow-card overflow-hidden">
+        <div className="bg-white rounded-lg md:rounded-xl shadow-lg overflow-hidden">
           <div className="md:flex">
-            <div className="md:w-1/3">
+            <div className="w-full md:w-1/3">
               <img
                 src={movie.poster}
                 alt={movie.title}
-                className="w-full h-full object-cover"
+                className="w-full h-auto md:h-full object-cover"
               />
             </div>
-            <div className="p-8 md:w-2/3">
-              <div className="flex items-start justify-between">
-                <div>
-                  <h1 className="text-3xl font-bold text-gray-900 mb-2">{movie.title}</h1>
-                  <div className="flex items-center gap-4 text-gray-600 mb-4">
+            <div className="p-4 md:p-8 md:w-2/3">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                <div className="flex-1">
+                  <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{movie.title}</h1>
+                  <div className="flex flex-wrap items-center gap-2 md:gap-4 text-sm md:text-base text-gray-600 mb-4">
                     <span>{new Date(movie.release_date).getFullYear()}</span>
-                    <span>•</span>
-                    <span>{movie.genre.join(', ')}</span>
+                    <span className="hidden sm:inline">•</span>
+                    <span className="break-words">{movie.genre.join(', ')}</span>
                   </div>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 sm:flex-shrink-0">
                   <button
                     onClick={() => dispatch(toggleFavorite(movie.title))}
-                    className={`p-2 rounded-full transition-colors duration-200 ${
+                    className={`p-3 md:p-2 rounded-full transition-colors duration-200 touch-manipulation ${
                       isFavorite
-                        ? 'text-red-500 hover:bg-red-50'
-                        : 'text-gray-400 hover:text-red-500 hover:bg-red-50'
+                        ? 'text-red-500 bg-red-50'
+                        : 'text-gray-400 hover:text-red-500 hover:bg-red-50 active:bg-red-50'
                     }`}
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
@@ -88,10 +88,10 @@ const MovieDetails = () => {
                   </button>
                   <button
                     onClick={() => dispatch(toggleWatchlist(movie.title))}
-                    className={`p-2 rounded-full transition-colors duration-200 ${
+                    className={`p-3 md:p-2 rounded-full transition-colors duration-200 touch-manipulation ${
                       isInWatchlist
-                        ? 'text-blue-500 hover:bg-blue-50'
-                        : 'text-gray-400 hover:text-blue-500 hover:bg-blue-50'
+                        ? 'text-blue-500 bg-blue-50'
+                        : 'text-gray-400 hover:text-blue-500 hover:bg-blue-50 active:bg-blue-50'
                     }`}
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
@@ -102,18 +102,18 @@ const MovieDetails = () => {
                 </div>
               </div>
 
-              <div className="prose max-w-none mt-6">
-                <p className="text-gray-600 leading-relaxed">{movie.description}</p>
+              <div className="prose max-w-none mt-4 md:mt-6">
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed">{movie.description}</p>
               </div>
 
-              <div className="mt-8 grid grid-cols-2 gap-4">
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="text-sm font-medium text-gray-500">Status</h3>
-                  <p className="mt-1 text-gray-900">{movie.status}</p>
+              <div className="mt-6 md:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-gray-50 p-3 md:p-4 rounded-lg">
+                  <h3 className="text-xs md:text-sm font-medium text-gray-500">Status</h3>
+                  <p className="mt-1 text-sm md:text-base text-gray-900">{movie.status}</p>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="text-sm font-medium text-gray-500">Cast</h3>
-                  <p className="mt-1 text-gray-900">{movie.cast.join(', ')}</p>
+                <div className="bg-gray-50 p-3 md:p-4 rounded-lg">
+                  <h3 className="text-xs md:text-sm font-medium text-gray-500">Cast</h3>
+                  <p className="mt-1 text-sm md:text-base text-gray-900 break-words">{movie.cast.join(', ')}</p>
                 </div>
               </div>
             </div>

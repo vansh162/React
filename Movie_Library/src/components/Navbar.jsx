@@ -33,8 +33,8 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-bold">
+        <div className="flex justify-between items-center h-14 md:h-16">
+          <Link to="/" className="text-lg md:text-xl font-bold">
             Movie Library
           </Link>
 
@@ -141,7 +141,7 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden border-t border-gray-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {isAuthenticated ? (
                 <>

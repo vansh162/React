@@ -1,0 +1,46 @@
+/* Mobile-specific enhancements */
+@media (max-width: 640px) {
+  /* Ensure touch targets are accessible (min 44x44px recommended) */
+  button {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Prevent text size adjustment on iOS when focusing inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+  
+  /* Better touch scrolling */
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* General mobile improvements */
+@media (max-width: 768px) {
+  /* Improve readability on smaller screens */
+  body {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus visibility for accessibility */
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+

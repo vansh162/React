@@ -32,9 +32,7 @@ const App = () => {
               path="/"
               element={
                 <PrivateRoute>
-                  <div className="container mx-auto px-4 py-8">
-                    <MovieList />
-                  </div>
+                  <MovieList />
                 </PrivateRoute>
               }
             />
@@ -42,7 +40,7 @@ const App = () => {
               path="/search"
               element={
                 <PrivateRoute>
-                  <div className="container mx-auto px-4 py-8">
+                  <div className="container mx-auto px-0 md:px-4 py-4 md:py-8">
                     <SearchBar />
                     <MovieList />
                   </div>
@@ -53,9 +51,7 @@ const App = () => {
               path="/movie/:title"
               element={
                 <PrivateRoute>
-                  <div className="container mx-auto px-4 py-8">
-                    <MovieDetails />
-                  </div>
+                  <MovieDetails />
                 </PrivateRoute>
               }
             />
@@ -63,9 +59,7 @@ const App = () => {
               path="/favorites"
               element={
                 <PrivateRoute>
-                  <div className="container mx-auto px-4 py-8">
-                    <MovieList />
-                  </div>
+                  <MovieList />
                 </PrivateRoute>
               }
             />
@@ -73,9 +67,7 @@ const App = () => {
               path="/watchlist"
               element={
                 <PrivateRoute>
-                  <div className="container mx-auto px-4 py-8">
-                    <MovieList />
-                  </div>
+                  <MovieList />
                 </PrivateRoute>
               }
             />
@@ -83,9 +75,7 @@ const App = () => {
               path="/popular"
               element={
                 <PrivateRoute>
-                  <div className="container mx-auto px-4 py-8">
-                    <MovieList />
-                  </div>
+                  <MovieList />
                 </PrivateRoute>
               }
             />

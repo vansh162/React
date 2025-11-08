@@ -1,7 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3004/tasks";
+// Use environment variable for API URL, fallback to localhost for development
+const BASE_URL = import.meta.env.VITE_API_URL || 
+  (import.meta.env.DEV ? "http://localhost:3004/tasks" : "/api/tasks");
 
 export const fetchTodos = createAsyncThunk("todos/fetchTodos", async () => {
   const response = await axios.get(BASE_URL);
@@ -14,12 +16,20 @@ export const addTodoAsync = createAsyncThunk("todos/addTodo", async (todo) => {
 });
 
 export const updateTodoAsync = createAsyncThunk("todos/updateTodo", async ({ id, updateText }) => {
-  const response = await axios.put(`${BASE_URL}/${id}`, updateText);
+  // For Vercel API, we use query parameter instead of path parameter
+  const url = BASE_URL.includes('/api/') 
+    ? `${BASE_URL}?id=${id}` 
+    : `${BASE_URL}/${id}`;
+  const response = await axios.put(url, updateText);
   return { id, updateText: response.data };
 });
 
 export const deleteTodoAsync = createAsyncThunk("todos/deleteTodo", async (id) => {
-  await axios.delete(`${BASE_URL}/${id}`);
+  // For Vercel API, we use query parameter instead of path parameter
+  const url = BASE_URL.includes('/api/') 
+    ? `${BASE_URL}?id=${id}` 
+    : `${BASE_URL}/${id}`;
+  await axios.delete(url);
   return id;
 });
 
